@@ -10,5 +10,12 @@ export const Section = ({ title, children }) => {
 };
 
 Section.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.shape({
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    positiveFeedback: PropTypes.number.isRequired,
+  }),
 };

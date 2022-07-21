@@ -9,9 +9,9 @@ export const FeedbackOptions = ({ options, handlerFeedback }) => {
           name={item}
           onClick={handlerFeedback}
           key={item}
-          style={{ marginRight: '10px' }}
+          style={{ textTransform: 'capitalize', marginRight: '10px' }}
         >
-          {item[0].toUpperCase() + item.slice(1)}
+          {item}
         </button>
       ))}
     </div>
