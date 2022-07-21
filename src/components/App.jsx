@@ -23,7 +23,7 @@ export class App extends Component {
     const positiveFeedback = Math.round((good * 100) / total);
 
     return (
-      <>
+      <div style={{ padding: '30px' }}>
         <Section title="Please leave feedback">
           <FeedbackOptions
             handlerFeedback={this.handlerFeedback}
@@ -43,7 +43,7 @@ export class App extends Component {
         ) : (
           <Notification message="There is no feedback" />
         )}
-      </>
+      </div>
     );
   }
 }
